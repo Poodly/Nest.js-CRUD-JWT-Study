@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
-import { BoardInterface, BoardStatus } from './board.model';
+import { BoardStatus } from './board.model';
 
 export type BoardDocument = HydratedDocument<Board>;
 
@@ -8,14 +8,14 @@ export type BoardDocument = HydratedDocument<Board>;
     timestamps: true
 })
 export class Board {
-  @Prop()
-  title: string;
+    @Prop()
+    title: string;
 
-  @Prop()
-  description: string;
+    @Prop()
+    description: string;
 
-  @Prop()
-  status: BoardStatus;
+    @Prop()
+    status: BoardStatus;
 }
 
 export const BoardSchema = SchemaFactory.createForClass(Board);

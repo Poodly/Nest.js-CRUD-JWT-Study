@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import * as mongoose from 'mongoose';
 import { BoardInterface, BoardStatus } from './board.model';
 // import { v1 as uuid } from 'uuid'; // 유니크한 id만들어주는 라이브러리 // as는 이름을 uuid로 쓰겠다 라는거
-import { CreateBoardDto } from './dto/create-board.dto';
+import { CreateBoardDto } from './board.dto/create-board.dto';
 import { Board } from './board.schema'
 
 @Injectable()

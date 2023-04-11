@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { MongooseModule } from '@nestjs/mongoose';
 import { BoardsController } from './boards.controller';
 import { BoardsService } from './boards.service';
+import { MongooseModule } from '@nestjs/mongoose';
 import { Board, BoardSchema } from './board.schema'
 
 @Module({
