@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Param, Delete, Patch, UsePipes, ValidationPipe } from '@nestjs/common';
 import { BoardsService } from './boards.service'
 import { BoardInterface, BoardStatus } from './board.model';
-import { CreateBoardDto } from './dto/create-board.dto';
+import { CreateBoardDto } from './board.dto/create-board.dto';
 import { BoardStatusValidationPipe } from './pipes/board-status-validation.pipe';
 
 // 게시물에 관한 로직을 처리하는 곳은 Service이다.
